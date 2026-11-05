@@ -1,0 +1,126 @@
+{
+  "entities": {
+    "PracticeLog": {
+      "title": "Medical Practice Log",
+      "description": "Daily medical practice and outpatient service log for Doctor at Node Doi Yao sub-district health centers under Chiang Mai PAO",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique record identifier"
+        },
+        "date": {
+          "type": "string",
+          "description": "Date of duty in YYYY-MM-DD format",
+          "maxLength": 10
+        },
+        "doctorName": {
+          "type": "string",
+          "description": "Physician name: นายแพทย์เกรียงยุทธ วรศีตกาลกุล",
+          "maxLength": 150
+        },
+        "healthCenter": {
+          "type": "string",
+          "description": "Sub-district Health Promotion Hospital (รพ.สต.) in Node Doi Yao network",
+          "enum": [
+            "รพ.สต.บ้านดอยยาว",
+            "รพ.สต.บ้านแม่ผาแหน",
+            "รพ.สต.บ้านป่าตาล",
+            "รพ.สต.บ้านกอสะเรียม"
+          ]
+        },
+        "timeShift": {
+          "type": "string",
+          "description": "Working duty hours or doctor leave",
+          "enum": [
+            "08.30 – 12.00 น.",
+            "09.00 – 12.00 น.",
+            "08.30 – 16.30 น.",
+            "09.00 – 16.00 น.",
+            "08.30 – 15.00 น.",
+            "09.00 – 15.00 น.",
+            "แพทย์ลา"
+          ]
+        },
+        "workDurationMinutes": {
+          "type": "number",
+          "description": "Calculated working minutes for statistical analytics"
+        },
+        "isLeave": {
+          "type": "boolean",
+          "description": "Whether the physician is on leave"
+        },
+        "generalOutpatientCases": {
+          "type": "number",
+          "description": "4.1 General acute outpatient examination and drug counseling"
+        },
+        "chronicDiseaseCases": {
+          "type": "number",
+          "description": "4.2 Chronic disease examination and scheduled follow-up"
+        },
+        "homeVisitCases": {
+          "type": "number",
+          "description": "4.3 Home visits for homebound and bedridden patients"
+        },
+        "medicalCertificateCases": {
+          "type": "number",
+          "description": "4.4 Medical certificates issued"
+        },
+        "specialProcedureCases": {
+          "type": "number",
+          "description": "4.5 Special procedures and others"
+        },
+        "totalPatients": {
+          "type": "number",
+          "description": "Total sum of all patients/services for the day"
+        },
+        "reporterPrefix": {
+          "type": "string",
+          "description": "Reporter title/prefix e.g. นางสาว, พว., นาย",
+          "maxLength": 50
+        },
+        "reporterFirstName": {
+          "type": "string",
+          "description": "Reporter first name",
+          "maxLength": 100
+        },
+        "reporterLastName": {
+          "type": "string",
+          "description": "Reporter last name",
+          "maxLength": 100
+        },
+        "reporterPosition": {
+          "type": "string",
+          "description": "Reporter official job position",
+          "maxLength": 150
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional clinical or administrative remarks",
+          "maxLength": 1000
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Creation ISO timestamp"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Last update ISO timestamp"
+        }
+      },
+      "required": [
+        "date",
+        "doctorName",
+        "healthCenter",
+        "timeShift",
+        "totalPatients"
+      ]
+    }
+  },
+  "firestore": {
+    "/practice_logs/{logId}": {
+      "schema": "PracticeLog",
+      "description": "Collection of daily doctor practice log entries for Node Doi Yao"
+    }
+  }
+}

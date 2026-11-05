@@ -1,0 +1,209 @@
+---
+name: Chiang Mai Public Health Medical Node Portal
+colors:
+  surface: '#faf8ff'
+  surface-dim: '#d2d9f4'
+  surface-bright: '#faf8ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f3ff'
+  surface-container: '#eaedff'
+  surface-container-high: '#e2e7ff'
+  surface-container-highest: '#dae2fd'
+  on-surface: '#131b2e'
+  on-surface-variant: '#444650'
+  inverse-surface: '#283044'
+  inverse-on-surface: '#eef0ff'
+  outline: '#757781'
+  outline-variant: '#c5c6d2'
+  surface-tint: '#445c9c'
+  primary: '#001849'
+  on-primary: '#ffffff'
+  primary-container: '#0f2d6b'
+  on-primary-container: '#7f97db'
+  inverse-primary: '#b2c5ff'
+  secondary: '#006398'
+  on-secondary: '#ffffff'
+  secondary-container: '#5bb8fe'
+  on-secondary-container: '#00476e'
+  tertiary: '#001f2d'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#00354a'
+  on-tertiary-container: '#00a4dc'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dae2ff'
+  primary-fixed-dim: '#b2c5ff'
+  on-primary-fixed: '#001848'
+  on-primary-fixed-variant: '#2a4482'
+  secondary-fixed: '#cce5ff'
+  secondary-fixed-dim: '#93ccff'
+  on-secondary-fixed: '#001d31'
+  on-secondary-fixed-variant: '#004b73'
+  tertiary-fixed: '#c4e7ff'
+  tertiary-fixed-dim: '#7bd0ff'
+  on-tertiary-fixed: '#001e2c'
+  on-tertiary-fixed-variant: '#004c69'
+  background: '#faf8ff'
+  on-background: '#131b2e'
+  surface-variant: '#dae2fd'
+typography:
+  headline-xl:
+    fontFamily: Prompt
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+  headline-xl-mobile:
+    fontFamily: Prompt
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-lg:
+    fontFamily: Prompt
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-lg-mobile:
+    fontFamily: Prompt
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-md:
+    fontFamily: Prompt
+    fontSize: 20px
+    fontWeight: '500'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Prompt
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 18px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  margin: 2rem
+  margin-sm: 1rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system establishes an authoritative, reliable, and ergonomically precise digital environment for public healthcare practitioners, clinical staff, and regional administrators operating under the Chiang Mai Provincial Administrative Organization (à¸­à¸šà¸ˆ. à¹€à¸Šà¸µà¸¢à¸‡à¹ƒà¸«à¸¡à¹ˆ). Designed specifically for decentralized nodes such as Node Doi Yao, the portal balances official administrative dignity with the rapid, zero-friction usability required in clinical practice logging and field reporting.
+
+The aesthetic follows an **Authoritative Modern Clinical** movement:
+- **Tone:** Professional, dependable, clean, and meticulously organized.
+- **Visual Weight:** Restrained and structured; prioritizing data clarity, legibility under varied lighting conditions (clinic desks, tablets in rural nodes), and visual composure.
+- **Hierarchy:** Strong contrast separating systemic institutional elements (official headers, validation states, node indicators) from high-velocity operational inputs (patient intake counts, diagnostic entries, transfer manifests).
+
+## Colors
+
+The palette establishes clinical authority and clarity through deep maritime blues balanced by aerated cyan tints and crisp clinical surfaces:
+
+- **Primary (`#0F2D6B` / `#1E3A8A`):** Deep Navy represents institutional governance, administrative permanence, and clinical authority. Used for top-level navigation, key structural headers, primary actions, and formal modal banners.
+- **Secondary (`#0284C7`):** Clinical Cyan provides focus, active states, key interactive indicators, and primary data highlights.
+- **Tertiary (`#38BDF8` with background tint `#E0F2FE`):** Soft Sky Blue serves as contextual accents, information badges, selected table rows, and active filter pills.
+- **Neutral & Text (`#0F172A`):** Deep Slate Ink delivers uncompromising typographic legibility for Thai and Latin character sets.
+- **Surface & Structural Borders:** `#FFFFFF` canvas with structural borders defined by subtle slate (`#E2E8F0` and `#CBD5E1`) to maintain clean segmentation without visual clutter.
+- **Semantic Signals:**
+  - Success: `#059669` / Surface: `#ECFDF5` (Completed records, verified logs)
+  - Warning / Pending: `#D97706` / Surface: `#FFFBEB` (Pending doctor review, incomplete triage)
+  - Critical / Alert: `#DC2626` / Surface: `#FEF2F2` (Emergency referrals, system warnings)
+
+## Typography
+
+Typographic execution blends the architectural precision of **Prompt** for Thai/Latin display headers with the neutral metric rigor of **Inter** (paired with systematic Thai fallbacks such as Sarabun or Thonburi) for tabular data, complex log inputs, and technical metrics.
+
+- **Headlines (Prompt):** Geometric yet accessible, providing structure to node administrative designations, section cards, and dashboard metrics.
+- **Body & Data (Inter):** Highly legible at small scales (12pxâ€“14px), essential for dense medical logs, ICD-10 codes, HN/VN references, and timestamps.
+- **Thai Language Consideration:** Line heights (`line-height`) are explicitly widened across all body levels (e.g., 22px on 14px text) to prevent vertical clipping of Thai tone marks and vowel diacritics (à¸¤.(Šâ@¸¢à¸¸à¸à¸•à¹Œà¹à¸¥à¸°à¸ªà¸ .,8.&¸.&Kx.)x.b8.,¸.!ÊK‚‚ˆÈÈ^[İ]	ˆÜXÚ[™Â‚•HÜ[\Ù\ÈH›ZYL‹XÛÛ[[ˆ™\ÜÛœÚ]™HÜšY\ÚYÛ™YÈİ\ÙH›İYÚY[œÚ]HÛ[šXØ[ÙÈ›Ü›\È[™^[œÚ]™H]H\Ú›Ø\™Ë‚‚‹H
+Šœ™XZÜÚ[ÎŠŠ‚ˆH
+Š‘\ÚİÜ
+8¢iHL
+NŠŠˆL‹XÛÛ[[ˆ^[İ]X\™Ú[ˆœ™[Xİ]\ˆK\™[XˆX^ÛÛZ[™\ˆÚYØ\Y]M›ÜˆÜ[X[^YK]˜XÚÚ[™È\š[™ÈÙÈ]Y][™Ë‚ˆH
+Š•X›]
+Í8 $ÈLÎ\
+NŠŠˆXÛÛ[[ˆ^[İ]X\™Ú[ˆK\™[Xİ]\ˆ\™[XˆYX[›Üˆ[Øš[HØ\™›İ[™È[™X›]]HØ\\™K‚ˆH
+Š“[Øš[H
+Í
+NŠŠˆXÛÛ[[ˆ^[İ]X\™Ú[ˆ\™[Xİ]\ˆÍ\™[XˆİXÚÜÈ\Ú›Ø\™İ[[X\HØ\™È[™˜[œÚ][ÛœÈÛÛ\^]HX›\È[È™\ÜÛœÚ]™HØ\™\İË‚‹H
+Š•™\XØ[š]NŠŠˆİšXİ˜\ÙH[˜Ü™[Y[
+ÜXÙK^ØHÜXÙK\ÛXHÜXÙK[YHMœÜXÙK[ØHÜXÙK^H
+HXZ[Z[š[™È\ØÚ\[™Y[YÛ›Y[XÜ›ÜÜÈ›Ü›H›İÜËY]šXÈØ\™Ë[™X›HXY\œË‚‚ˆÈÈ[]˜][Ûˆ	ˆ\‚•š\İX[Y\˜\˜ÚH™[Y\ÈÛˆ
+Š“İËPÛÛ˜\İİ][™\ÈZ\™YÚ]Û˜[İ\™˜XÙH^Y\œÊŠ‹[X™\˜][H]›ÚY[™ÈX]H›ÜÚYİÜÈÈ™]™[š\İX[›Ú\ÙH\š[™È›ÛÛ™ÙYÛ[šXØ[ÚYË‚‚‹H
+Š˜\ÙH^Y\ˆ
+Ø[˜\ÊNŠŠˆÑQØ
+Û]KML
+HÙ\™\È\ÈHİX™YY˜XÚÙ›Ü‚‹H
+Š“^Y\ˆH
+Ø\™ËX›\Ë[™[ÊNŠŠˆ\™HÚ]HÑ‘‘‘‘‘˜™\İ[™ÈÛˆHØ[˜\Ë›İ[™YHHÜš\Ü\›Ü™\ˆ
+ÑL‘NŒ
+K‚‹H
+Š“^Y\ˆˆ
+›ÜİÛœËÜİ™\œËXİ]™H˜]Ù\œÊNŠŠˆÑ‘‘‘‘‘˜›Ü™\™YÚ]ĞĞ‘QLX[™[ˆ[XšY[Y™\ÙHÚYİÈ
+MœLœ™Ø˜JMKŒË‹Œ
+X
+K‚‹H
+Š“^Y\ˆÈ
+[Ù[È	ˆ\™Ù[[\ÊNŠŠˆÙ[\™YÑ‘‘‘‘‘˜X[ÙÜÈ[˜ÚÜ™YÚ]HYÚXÛÛ˜\İ›İ[™\H[™Y\˜XÚÙ›ÜØÜš[H
+™Ø˜JMKKLËJX
+K›Øİ\Ú[™È][[Ûˆ\™XİHÛÈÛÛ™š\›X][ÛˆXİ[ÛœÈÜˆ˜[Y][Ûˆ\œ›ÜœË‚‚ˆÈÈÚ\\Â‚•HŞ\İ[H[\[Y[ÈH
+Š”ÛÙ
+ŠˆÚ\H[™İXYÙH
+›İ[™Y™\ÜÎˆX
+KÛÛ™^Z[™ÈÛ[šXØ[İXİ\™H[™[œİ]][Û˜[\İÚ]İ]™Y[[™È\œÚÜˆİ™\›H^Y[‚‚‹H
+Š’[œ]Ë]ÛœË[™˜YÙ\ÎŠŠˆ
+Œ\™[X
+HÛÜ›™\ˆ˜Y]\È›ÜˆÚ\œ\[™X›HÛÛ›ÛË‚‹H
+ŠØ\™Ëİ[[X\H[\Ë[™[™[ÎŠŠˆ
+\™[X
+HÛÜ›™\ˆ˜Y]\È›ÜˆİXKÛX[ˆÜ›İ\[™Ë‚‹H
+Š“[Ù[È[™›[İ]ÛÛZ[™\œÎŠŠˆLœ
+Í\™[X
+HÛÜ›™\ˆ˜Y]\È›Üˆ[]˜]Y›ØØ[[[Y[Ë‚‹H
+Š”İ]\È[È[™˜YÙ\ÎŠŠˆ™]Z[ˆHİXH›İ[™Y\ÛH›Ùš[H
+
+H˜]\ˆ[ˆ[İY][H[ÈÈXZ[Z[ˆHYZ[š\İ˜]]™KÛİ™\››Y[YÜ˜YH™Y[‚‚ˆÈÈÛÛ\Û™[Â‚ˆÈÈÈ]ÛœÂ‹H
+Š”š[X\NŠŠˆ˜XÚÙÜ›İ[™ÌŒ‘˜^Ñ‘‘‘‘‘˜˜Y]\Èİ™\ˆİ]HÌQLĞNXˆ\ÙY›ÜˆÜš]XØ[İX›Z\ÜÚ[ÛœÈ
+K™Ë‹¸.&¸.,x.&x.%‹nˆˆ.˜ŠŞŠ‹Š^˜ŠBâŒˆ°€‹‚â‹‚âß‚âg‚â‹‚âÇ‚âg‚â‚âË‚â‚â«‚æ#‚â‚âW‚æ#‚â´ˆ¤¸(´€¨©M•½¹‘…Éäè¨¨MÕÉ™…”€€°‰½É‘•È€ÅÁà€ŒÀÈàÑİ€°Ñ•áĞ€ŒÀÈàÑİ€°¡½Ù•ÈÍÑ…Ñ”‰…­É½Õ¹€ÁÉ€¸(´€¨©•ÍÑÉÕÑ¥Ù”è¨¨MÕÉ™…”€ÈØÈÙ€°Ñ•áĞ€€°¡½Ù•È€äÅÅ€¸(´€¨©Q•ÉÑ¥…Éä€¼¡½ÍĞè¨¨9¼‰½É‘•È°Ñ•áĞ€ŒÁÉÙ	€°¡½Ù•È‰…­É½Õ¹€ÅÕå€¸((ŒŒŒ½É´%¹ÁÕÑÌ€˜M•±•ÑÌ(´!•¥¡ĞÍÑ…¹‘…É¥Ì€ĞÁÁà™½È‘•Í­Ñ½À‘…Ñ„•¹ÑÉä°Á…‘‘¥¹œ€áÁà€ÄÉÁá€¸(´	½É‘•Èè€ÅÁà€	ÕÅ€½Ù•Èİ¡¥Ñ”‰…­É½Õ¹¸(´½ÕÌè€ÉÁàÉ¥¹œ¥¸€ŒÀÈàÑİ€İ¥Ñ ‰½É‘•È€ŒÀÈàÑİ€…¹é•É¼Í¡…‘½Ü‰±••¸(´ÉÉ½Èè€ÅÁà€ÈØÈÙ€°İ¥Ñ ÍÕÁÁ½ÉÑ¥¹œµ¥É¼µ±…‰•°‰•¹•…Ñ ¥¸€ÈØÈÙ€¸(´Q¡…¤¥¹ÁÕĞ±…‰•±Ìè¥ÍÁ±…å•‘¥É•Ñ±ä…‰½Ù”¥¹ÁÕĞ¥¸±…‰•°µµ‘€€¡™½¹Ğµİ•¥¡Ğè€ÔÀÁ€¤°½±½É•€ŒÌÌĞÄÔÕ€¸((ŒŒŒ¡¥ÁÌ€˜	…‘•Ì(´€¨©9½‘”%‘•¹Ñ¥™¥•È	…‘”è¨¨9…ÙäÑ¥¹Ğ€ŒÁÉÙ	€‰…­É½Õ¹°€€Ñ•áĞ°‰½±±…‰•°µÍµ€¸(´€¨©MÑ…ÑÕÌ¡¥ÁÌè¨¨1¥¡Ğ‰…­É½Õ¹™¥±±Ì€¡€ÁÉ€™½ÈÑ¥Ù”½9½Éµ…°°€ÉÉ€™½È!¥ I¥Í¬°€Õ€™½È¥Í¡…É•¤Á…¥É•İ¥Ñ ¡¥ µ½¹ÑÉ…ÍĞÑ•áĞ€¡€ŒÀÈàÑİ€°€äÅÅ€°€ŒÀĞÜàÔİ€¤¸((ŒŒŒMÑ…Ñ¥ÍÑ¥…°…Í¡‰½…É…É‘Ì(´AÕÉ”İ¡¥Ñ”‰…­É½Õ¹°€ÅÁà‰½É‘•È€ÉáÁ€°Á…‘‘¥¹œ€Ä¸ÈÕÉ•µ€¸(´•…ÑÕÉ•Ì„Ñ½Àµ¥É¼µ‰…‘”€¡”¹œ¸°€‹‚â‹‚â·‚âS‚âW‚â€¸¤."8.*¸.,8.*¸.(x.)‹‰‰‹^˜’"’ÂföÆÆ÷vVB'’â÷fW'6—¦VBçVÖW&–6ÂF—7Æ’–â†VFÆ–æR×†Æ†3c$Cd&’ÂæBâ–æÆ–æRG&VæB÷"6ö×&F—fR7V'FW‡B–â&öG’×6Öà ¢2227VÖÖ'’F&ÆW0¢Ò†VFW#¢4c„dd6&6¶w&÷VæBÂ&÷&FW'2&÷GFöÒ'‚44$CTSÂFW‡BWW&66RÆ&VÂ×6Ö–â3CsSSc–à¢Ò&÷s¢ÇFW&æF–ær†÷fW"VffV7B†4ccTc–’Â6VÆÂFF–ær'‚g†Â&÷GFöÒ&÷&FW"‚4S$S„cà¢ÒFFÆ–væÖVçC¢FW‡BÆVgBÖÆ–væVC²6÷VçG2Â„âçVÖ&W'2ÂæBÖVF–6ÂÖWG&–2VçF—F–W2&–v‡BÖÆ–væVBf÷"&–Bf—7VÂ66ææ–ærà ¢222ÖöFÂÆW'G0¢ÒÖ†–×VÒv–GF‚S#‚Âg&ÖVBv—F‚âWF†÷&—FF—fR†VFW"7G&—–â3c$Cd&à¢Ò6öçF–ç26ÆV"–6öâ–æF–6F÷'2„6†V6¶Ö&²Âv&æ–ærö7FvöâÂ–æf÷&ÖF–öâ6—&6ÆR’ÂW‡Æ–6—B–ç7G'V7F–öæÂ&öG’6÷’ÂæBGVÂÖ'WGFöâ6öæf—&ÖF–öâfö÷FW"&–v‡BÖÆ–væVBv—F‚&–Ö'’æB6V6öæF'’7F–öç2

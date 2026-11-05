@@ -1,0 +1,6 @@
+{
+  "name": "Chiang Mai Public Health Medical Node Portal",
+  "description": "Authoritative clinical practice logging, patient triage, and decentralized referral portal for Node Doi Yao under Chiang Mai Provincial Administrative Organization (อบจ. เชียงใหม่).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
